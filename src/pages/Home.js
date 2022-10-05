@@ -1,5 +1,5 @@
 import React from 'react';
-import Chats from '../components/Chats';
+import Chat from '../components/Chat';
 import SideBar from '../components/SideBar';
 
 const Home = () => {
@@ -7,7 +7,8 @@ const Home = () => {
     <div className='home'>
         <div className='container'>
             <SideBar />
-            <Chats />
+            <Chat />
+            
 
         </div>
 

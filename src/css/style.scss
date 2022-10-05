@@ -73,7 +73,7 @@
     }
 }
 .home{
-    background-color:#dddcf0;
+    background-color:#a7bcff;
     height: 100vh;
     align-items: center;
     display: flex;
@@ -82,24 +82,26 @@
 
     .container{
         display: flex;
-        border: 1px solid #eceef1;
+        border: 1px solid white;
         height: 80%;
         width: 80%;
-        border-radius: 10px;
         overflow: hidden;
+        border-radius: 10px;
     }
-    .chats {
+    .chat {
         flex: 2;
     }
 
     .sidebar {
         flex: 1;
-        background-color: #7b96ec;
+        background-color:#3e3c61;
         position: relative;
+        border-radius: 10px;
 
         .navbar {
             display: flex;
-            background-color: #4a577f;
+            background-color: #2f2d52;
+            color: #ddddf7;
             height: 50px;
             align-items: center;
             padding: 3px;
@@ -128,11 +130,57 @@
                 align-items: center;
                 font-size: 15px;
                 border: none;
+                margin-left: 15px;
                 cursor: pointer;
             }
         }
 
     }
+    .search{
+        border-bottom: 1px solid gray;
+        .search-container {
+            padding: 10px;        
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            color: white;
+            outline: none;
 
-    
+            &::placeholder {
+                color: #ddddf7;;
+            }
+        }
+    }
+    .chat-container {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #2f2d52;
+            }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .info {
+            span {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 14px;
+                color: lightgray;
+            }
+        }
+    }       
 }
+
